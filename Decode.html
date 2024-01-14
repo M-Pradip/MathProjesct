@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Encoder using matrix</title>
+    <style>
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Message Decoder using matrix</h1>
+    <a href="index.html">home</a>
+    <label for="messageInput">Enter the message to encode:</label>
+    <input
+      type="text"
+      id="encodedNumbers"
+      placeholder="Enter encoded message"
+    />
+
+    <label for="matrixInput00">Enter the value for matrix[0][0]:</label>
+    <input type="number" id="matrixInput00" placeholder="Matrix[0][0]" />
+
+    <label for="matrixInput01">Enter the value for matrix[0][1]:</label>
+    <input type="number" id="matrixInput01" placeholder="Matrix[0][1]" />
+
+    <label for="matrixInput10">Enter the value for matrix[1][0]:</label>
+    <input type="number" id="matrixInput10" placeholder="Matrix[1][0]" />
+
+    <label for="matrixInput11">Enter the value for matrix[1][1]:</label>
+    <input type="number" id="matrixInput11" placeholder="Matrix[1][1]" />
+
+    <button onclick="decodeMessage()">Decode</button>
+
+    <h2>Results:</h2>
+
+    <p id="decodedResult"></p>
+    <!-- <script src="add.js"></script> -->
+  </body>
+</html>

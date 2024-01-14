@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encoder/Decoder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Message Encoding and Decoding By using matrix</h1>
+    <div class="mainDiv">
+      <div class="encode">
+        <h1>Message Encoder using matrix</h1>
+
+        <label for="messageInput">Enter the message to encode:</label>
+        <input type="text" id="messageInput" placeholder="Enter message" />
+        <div class="rowOne">
+          <label for="matrixInput00"
+            >Enter the value for matrix a<sub>11</sub>:</label
+          >
+          <input
+            type="number"
+            class="small-input"
+            id="matrixInput00"
+            placeholder="a11"
+          />
+
+          <label for="matrixInput01"
+            >Enter the value for matrix a<sub>12</sub>:</label
+          >
+          <input
+            type="number"
+            class="small-input"
+            id="matrixInput01"
+            placeholder="a12"
+          />
+        </div>
+        <div class="rowTwo">
+          <label for="matrixInput10"
+            >Enter the value for matrix a<sub>21</sub>:</label
+          >
+          <input
+            type="number"
+            class="small-input"
+            id="matrixInput10"
+            placeholder="a21"
+          />
+
+          <label for="matrixInput11"
+            >Enter the value for matrix a<sub>22</sub>:</label
+          >
+          <input
+            type="number"
+            class="small-input"
+            id="matrixInput11"
+            placeholder="a22"
+          />
+        </div>
+        <button onclick="encodeMessage()">Encode</button>
+        <div>
+          <h2>Results:</h2>
+
+          <p id="encodedResult">Encoded Result:</p>
+        </div>
+      </div>
+
+      <div class="decode">
+        <h1>Message Decoder using matrix</h1>
+        <label for="messageInput">Enter the message to Decode:</label>
+        <input type="text" id="encodedNumbers" placeholder="Enter message" />
+        <div class="rowOne">
+          <label for="matrixInput00"
+            >Enter the value for matrix a<sub>11</sub>:</label
+          >
+          <input
+            type="number"
+            class="small-input"
+            id="matrixInput00"
+            placeholder="a11"
+          />
+
+          <label for="matrixInput01"
+            >Enter the value for matrix a<sub>12</sub>:</label
+          >
+          <input
+            type="number"
+            class="small-input"
+            id="matrixInput01"
+            placeholder="a12"
+          />
+        </div>
+        <div class="rowTwo">
+          <label for="matrixInput10"
+            >Enter the value for matrix a<sub>21</sub>:</label
+          >
+          <input
+            type="number"
+            class="small-input"
+            id="matrixInput10"
+            placeholder="a21"
+          />
+
+          <label for="matrixInput11"
+            >Enter the value for matrix a<sub>22</sub>:</label
+          >
+          <input
+            type="number"
+            class="small-input"
+            id="matrixInput11"
+            placeholder="a22"
+          />
+        </div>
+        <button onclick="decodeMessage()">Decode</button>
+        <div>
+          <h2>Results:</h2>
+
+          <p id="decodedResult">Decoded Result:</p>
+        </div>
+      </div>
+    </div>
+    <script src="decode.js"></script>
+    <script src="encode.js"></script>
+  </body>
+</html>

@@ -6,12 +6,12 @@ function decodeMessage() {
   const encodedResult = encodedNumbersString.split(",").map(Number);
   const userMatrix = [
     [
-      parseInt(document.getElementById("matrixInput00").value),
-      parseInt(document.getElementById("matrixInput01").value),
+      parseInt(document.getElementById("matrixInputD00").value),
+      parseInt(document.getElementById("matrixInputD01").value),
     ],
     [
-      parseInt(document.getElementById("matrixInput10").value),
-      parseInt(document.getElementById("matrixInput11").value),
+      parseInt(document.getElementById("matrixInputD10").value),
+      parseInt(document.getElementById("matrixInputD11").value),
     ],
   ];
 

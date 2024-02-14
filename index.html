@@ -11,7 +11,6 @@
     <div class="mainDiv">
       <div class="encode">
         <h1>Message Encoder using matrix</h1>
-
         <label for="messageInput">Enter the message to encode:</label>
         <input type="text" id="messageInput" placeholder="Enter message" />
         <div class="rowOne">
@@ -24,7 +23,6 @@
             id="matrixInput00"
             placeholder="a11"
           />
-
           <label for="matrixInput01"
             >Enter the value for matrix a<sub>12</sub>:</label
           >
@@ -45,7 +43,6 @@
             id="matrixInput10"
             placeholder="a21"
           />
-
           <label for="matrixInput11"
             >Enter the value for matrix a<sub>22</sub>:</label
           >
@@ -59,61 +56,56 @@
         <button onclick="encodeMessage()">Encode</button>
         <div>
           <h2>Results:</h2>
-
           <p id="encodedResult">Encoded Result:</p>
         </div>
       </div>
-
       <div class="decode">
         <h1>Message Decoder using matrix</h1>
         <label for="messageInput">Enter the message to Decode:</label>
         <input type="text" id="encodedNumbers" placeholder="Enter message" />
         <div class="rowOne">
-          <label for="matrixInput00"
+          <label for="matrixInputD00"
             >Enter the value for matrix a<sub>11</sub>:</label
           >
           <input
             type="number"
             class="small-input"
-            id="matrixInput00"
+            id="matrixInputD00"
             placeholder="a11"
           />
-
-          <label for="matrixInput01"
+          <label for="matrixInputD01"
             >Enter the value for matrix a<sub>12</sub>:</label
           >
           <input
             type="number"
             class="small-input"
-            id="matrixInput01"
+            id="matrixInputD01"
             placeholder="a12"
           />
         </div>
         <div class="rowTwo">
-          <label for="matrixInput10"
+          <label for="matrixInputD10"
             >Enter the value for matrix a<sub>21</sub>:</label
           >
           <input
             type="number"
             class="small-input"
-            id="matrixInput10"
+            id="matrixInputD10"
             placeholder="a21"
           />
-
-          <label for="matrixInput11"
+          <label for="matrixInputD11"
             >Enter the value for matrix a<sub>22</sub>:</label
           >
           <input
             type="number"
             class="small-input"
-            id="matrixInput11"
+            id="matrixInputD11"
             placeholder="a22"
           />
         </div>
         <button onclick="decodeMessage()">Decode</button>
         <div>
           <h2>Results:</h2>
-
           <p id="decodedResult">Decoded Result:</p>
         </div>
       </div>
